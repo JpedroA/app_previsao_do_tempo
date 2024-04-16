@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title> menu titulo </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item>configuraçoes</ion-item>
+        <ion-item>Sobre</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Open Wheather</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <div class="container" >
+    <div class="form">
+      <h3>Confira o clima de uma cidade:</h3>
+      <div class="form-input-container">
+        <ion-input type="text" placeholder="Digite o nome da cidade" id="city-input"></ion-input>
+        <ion-button id="search">
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div id="weather-data" class="hide">
+      <h2>
+        <ion-icon name="location"></ion-icon>
+        <span id="city"></span>
+        <ion-img src="" id="country"></ion-img>
+      </h2>
+      <p id="temperature"><span></span>&deg;C</p>
+      <div id="description-container">
+        <p id="description"></p>
+        <ion-img src="" id="weather-icon"></ion-img>
+      </div>
+      <div id="details-container">
+        <p id="umidity"><ion-icon name="droplet"></ion-icon> <span></span></p>
+        <p id="wind"><ion-icon name="wind"></ion-icon> <span></span></p>
+      </div>
+    </div>
+    <div id="error-message" class="hide">
+      <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+    </div>
+    <div id="loader" class="hide">
+      <ion-spinner></ion-spinner>
+    </div>
+  </div>
+</ion-content>
+
+

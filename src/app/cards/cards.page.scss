@@ -1,0 +1,15 @@
+.temperature{
+    position: fixed;
+    top: 0px; /* Fixa no topo da página */
+    left: 270px; /* Fixa na esquerda da página */
+    color: aliceblue;
+  }
+
+.img{
+    width: 70px; /* Define a largura da imagem como 200 pixels */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.description{
+    font-size: 18px;
+}

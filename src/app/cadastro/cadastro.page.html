@@ -1,13 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cadastro</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cadastro</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+ <div class="container">
+    <ion-input 
+      label="Nome:"
+      labelPlacement="floating"
+      placeholder="Digite o nome completo"
+      type="text"
+      clearInput="true"
+      fill="outline">
+    </ion-input>
+
+    <ion-input 
+      label="CEP:" 
+      labelPlacement="floating" 
+      placeholder="Informe seu CEP" 
+      clearInput="true" 
+      fill="outline"
+      [counter]="true"
+      maxlength="8">
+    </ion-input>
+
+    <ion-input 
+      label="E-mail" 
+      labelPlacement="floating" 
+      placeholder="Informe seu E-mail" 
+      type="email" 
+      clearInput="true" 
+      fill="outline"
+      errorText="Insira um email válido"
+      ngModel
+      email>
+    </ion-input>
+
+    <ion-input 
+      label="Senha" 
+      labelPlacement="floating" 
+      placeholder="Digite uma senha" 
+      type="Password" 
+      clearInput="true" 
+      fill="outline">
+    </ion-input>
+
+    <ion-button>Enviar</ion-button>
+
+ </div>
 </ion-content>

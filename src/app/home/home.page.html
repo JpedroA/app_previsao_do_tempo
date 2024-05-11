@@ -2,13 +2,31 @@
   <ion-menu contentId="main-content">
     <ion-header>
       <ion-toolbar>
-        <ion-title> menu titulo </ion-title>
+        <ion-title> User </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
       <ion-list>
-        <ion-item><ion-icon name="settings-sharp" slot="start"></ion-icon> configuraçoes</ion-item>
-        <ion-item>Sobre</ion-item>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="settings-outline" slot="start" size="small"></ion-icon> 
+            <ion-label>Configurações</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="alert-circle-outline" slot="start" size="small"></ion-icon>
+            <ion-label>Sobre</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="exit-outline" slot="start" size="small"></ion-icon>
+            <ion-label>Sair</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

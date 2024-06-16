@@ -1,61 +1,61 @@
+
 <ion-content [fullscreen]="true">
 
  <div class="container">
 
   <ion-title class="title">Faça seu cadastro</ion-title>
 
-    <ion-input 
-      label="Nome:"
-      labelPlacement="floating"
-      placeholder="Digite seu nome completo"
-      type="text"
-      clearInput="true"
-      fill="outline">
-    </ion-input>
-    
-    <ion-input 
-      label="E-mail:" 
-      labelPlacement="floating" 
-      placeholder="Informe seu E-mail" 
-      type="email" 
-      clearInput="true" 
-      fill="outline"
-      errorText="Insira um e-mail válido"
-      ngModel
-      email>
-    </ion-input>
+    <form novalidate[]>
+      <ion-input
+        label="Nome:"
+        labelPlacement="floating"
+        placeholder="Digite seu nome completo"
+        type="name"
+        clearInput="true"
+        fill="outline">
+      </ion-input>
+      
+      <ion-input
+        label="E-mail:"
+        labelPlacement="floating"
+        placeholder="Informe seu E-mail"
+        type="email"
+        clearInput="true"
+        fill="outline"
+        errorText="Insira um e-mail válido"
+        ngModel
+        email>
+      </ion-input>
+      <ion-input
+        label="CEP:"
+        labelPlacement="floating"
+        type="cep"
+        placeholder="Informe seu CEP"
+        clearInput="true"
+        fill="outline"
+        [counter]="true"
+        maxlength="8">
+      </ion-input>
+      
+      <ion-input
+        label="Senha:"
+        labelPlacement="floating"
+        placeholder="Digite uma senha"
+        type="password"
+        clearInput="true"
+        fill="outline">
+      </ion-input>
+      <ion-input
+        label="Senha:"
+        labelPlacement="floating"
+        placeholder="Digite a senha novamente"
+        type="confirmPassword"
+        clearInput="true"
+        fill="outline">
+      </ion-input>
+      <ion-button id="send_form">Enviar</ion-button>
+    </form>
 
-    <ion-input 
-      label="CEP:" 
-      labelPlacement="floating" 
-      placeholder="Informe seu CEP" 
-      clearInput="true" 
-      fill="outline"
-      [counter]="true"
-      maxlength="8">
-    </ion-input>
-
-    
-
-    <ion-input 
-      label="Senha:" 
-      labelPlacement="floating" 
-      placeholder="Digite uma senha" 
-      type="Password" 
-      clearInput="true" 
-      fill="outline">
-    </ion-input>
-
-    <ion-input 
-      label="Senha:" 
-      labelPlacement="floating" 
-      placeholder="Digite a senha novamente" 
-      type="Password" 
-      clearInput="true" 
-      fill="outline">
-    </ion-input>
-
-    <ion-button id="send_form">Enviar</ion-button>
     <ion-button class="text-button" fill="clear" routerLink="/login">Já tenho cadastro</ion-button>
  </div>
 </ion-content>
